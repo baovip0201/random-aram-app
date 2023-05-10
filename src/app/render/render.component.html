@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="btn-container">
+    <button class="random-btn" (click)="showData(items)">Random</button>
+  </div>
+
+  <div class="data-container" *ngIf="isData">
+      <div *ngFor="let item of datas; let i = index" class="card">
+        {{ item }}
+      </div>
+  </div>
+</div>
